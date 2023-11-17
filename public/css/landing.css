@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap");
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: #872021;
+    overflow: hidden;
+}
+
+.header .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 2000px 100px;
+}
+
+.header .wave1 {
+    -webkit-animation: animate 30s linear infinite;
+    animation: animate 30s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.header .wave2 {
+    -webkit-animation: animate2 15s linear infinite;
+    animation: animate2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.header .wave3 {
+    -webkit-animation: animate2 30s linear infinite;
+    animation: animate2 30s linear infinite;
+    z-index: 997;
+    opacity: 0.2;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    bottom: -15px;
+}
+
+.header .wave4 {
+    -webkit-animation: animate2 5s linear infinite;
+    animation: animate2 5s linear infinite;
+    z-index: 996;
+    opacity: 0.5;
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+    bottom: 15px;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@-webkit-keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.italic {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.medium {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.semi-bold {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .btn-purple {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #FF9900 !important;
+    width: 100%;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .btn-outline-purple {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .btn-outline-purple:hover {
+    color: #FF9900;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.text-center h2 {
+    font-size: 26px;
+}
+
+.text-center p {
+    font-size: 16px;
+}
+
+.row .col {
+    z-index: 1001;
+}
+
+
+    .navbar {
+        background-color: #333;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #FF9900;
+    }
+  
+    .header {
+        background-color: #222;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .header h2 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .header p {
+        color: #fff;
+        font-size: 18px;
+    }
+    .footer {
+        padding: 20px 0;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .footer p {
+        color: #fff;
+        font-size: 14px;
+    }
+    .btn-red {
+        background-color: #FF9900;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-red:hover {
+        background-color: #FF6600;
+    }
+
+    .btn-purple {
+        background-color: #6C63FF;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-purple:hover {
+        background-color: #524CFF;
+    }
+    .content {
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        background-color: #FF9900;
+        color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+@media screen and (max-width: 576px) {
+    .row .col .content-top {
+        padding: 32px 20px 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #FF9900;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row .col .content-top {
+        padding: 32px 20px 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #FF9900;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row .col .content-top {
+        padding: 32px 20px 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #6a70fc;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .row .col .content-bottom {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row .col .content-bottom {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row .col .content-bottom {
+        margin-top: 32px;
+    }
+}
+
+.row .col .content {
+    padding: 32px 20px 32px 20px;
+    background: #fff;
+    border-color: #FF9900;
+}
+
+@media screen and (min-width: 992px) {
+    .row .col .content {
+        padding: 32px 20px 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #FF9900;
+    }
+}
+
+.row .col .content .card {
+    background: #FF9900;
+    padding: 16px;
+    color: #fff;
+}
+
+.row .col .content .btn-custom {
+    background: #FF9900;
+    color: #fff;
+    width: 100%;
+}
+
+.pengaduan .bg-purple {
+    background: #FF9900;
+    width: 100%;
+    padding: 26px;
+}
+
+.modal .modal-dialog .modal-content .modal-body h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.modal .modal-dialog .modal-content .modal-body p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #707070;
+}
+
+.modal .modal-dialog .modal-content .modal-body .btn-purple {
+    border: 1px solid #FF9900;
+    background: #FF9900;
+    color: #fff;
+    width: 100%;
+}
+.footer {
+    background-color: #FF9900;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+.content.large {
+    font-size: 20px;
+}
+.btn-red {
+    background-color: #FF9900;
+    color: #fff;
+}
+
+.btn-red:hover {
+    background-color: #FF9900;
+}
+/*# sourceMappingURL=app.css.map */
